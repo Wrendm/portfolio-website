@@ -3,7 +3,6 @@ import {Outlet, BrowserRouter, Route, Routes} from 'react-router';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
