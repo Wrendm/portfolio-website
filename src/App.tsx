@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {Outlet, BrowserRouter, Route, Routes} from 'react-router';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
@@ -12,6 +13,7 @@ function App() {
 	<Routes>
 	    <Route element={<Layout />}>
 	        <Route path="/" element={<Home />} />
+	        <Route path="/projects" element={<Projects />} />
 	    </Route>
 	</Routes>
     </BrowserRouter>

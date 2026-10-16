@@ -1,0 +1,34 @@
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+
+type ProjectProps = {
+    id: number;
+    image: URL;
+    alt: string;
+    name: string;
+    stack: string[];
+    association: string;
+    description: string;
+    view-link: URL;
+    github-link: URL;
+};
+
+export function ProjectCard({id, image, alt, name, stack, association, description, view-link, github-link}: ProjectProps){
+return(
+    <Card>
+        <h2>{name}</h2>
+        <CardMedia
+            component="img"
+            image="{image}"
+            alt="{alt}"
+            className="ProjectCardImg"
+        />
+        <CardContent>
+        </CardContent>
+        <CardActions>
+        </CardActions>
+    </Card>
+}

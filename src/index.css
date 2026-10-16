@@ -7,7 +7,9 @@
 :root {
   --text: #343434;
   --text-h: #a1a291;
-  --bg: #eae6d8;
+  --secondary-text: #120a00;
+  --bg: #eae6d8;    
+  --secondary-bg: #C3AD95;
   --border: #a1a291;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -38,9 +40,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #a1a291;
+    --text: #fefae0;
+    --secondary-text: #120a00;
     --text-h: #eae6d8;
     --bg: #232323;
+    --secondary-bg: #C3AD95;
     --border: #a1a291;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -87,7 +91,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
@@ -98,10 +102,27 @@ h2 {
 h3, h4{
     letter-spacing: -0.68px;
 }
+
+h3{
+    font-size:24px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
 h4{
+    font-size: 22px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-family: "Bokor", serif;
 }
 p {
   margin: 0;
+}
+
+a.active{
+color: #fffdf0;
+font-weight: bold
+}
+
+img{
+    margin: 20px 0;
 }

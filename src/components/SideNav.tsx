@@ -1,20 +1,25 @@
-import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import headshot from '../assets/headshot.jpg';
+import {FaLinkedin, FaGithub} from "react-icons/fa6";
+import {NavLink} from 'react-router';
 
 const SideNav = () => {
     return (
         <aside className="SideNav">
-	    <nav>
-	    	<Stack direction="column" spacing={2}>
-                    <ul>
-		    	<li>Link Here</li>
-		    	<li>Link Here</li>
-		    	<li>Link Here</li>
-		    </ul>
-		    <Avatar alt="Wren Miles headshot" src={headshot} />
-	        </Stack>
-	    </nav>
+            <nav className="SideNavLinks">
+                <NavLink to="/" end className="SideNavLink">Home</NavLink>
+                <NavLink to="/projects" className="SideNavLink">Projects</NavLink>
+            </nav>
+            <div className="SideNavTitle">
+                <div className="socialLinks">
+                    <a href="https://linkedin.com/in/wren-miles-529595208">
+                        <FaLinkedin color="var(--text)" size={28} />
+                    </a>
+                    <a href="https://github.com/Wrendm">
+                        <FaGithub color="var(--text)" size={28} />
+                    </a>
+                </div>
+                <h4>Wren Miles Web Solutions</h4>
+            </div>
         </aside>
     )
 }
