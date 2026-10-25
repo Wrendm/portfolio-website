@@ -11,17 +11,19 @@ type ProjectProps = {
     name: string;
     stack: string[];
     association: string;
-    descriptionHeading: string;
+    features: string[];
+    challenge: string;
+    outcome: string;
     descriptionBody: string;
     viewLink: URL;
     githubLink: URL;
 };
 
-export default function ProjectCard({id, image, alt, name, stack, association, descriptionHeading, descriptionBody, viewLink, githubLink}: ProjectProps){
+export default function ProjectCard({id, image, alt, name, stack, association, features, challenge, outcome, descriptionBody, viewLink, githubLink}: ProjectProps){
 return(
     <Card className="projectCard" sx={{ backgroundColor: 'var(--secondary-bg)',  
 color: 'var(--secondary-text)', padding: '30px 40px', borderRadius: '15px', margin: '20px 0'}}>
-        <h2 style={{color: 'var(--secondary-text)'}}>{name}</h2>
+        <h2 className="projectName" style={{color: 'var(--secondary-text)'}}>{name}</h2>
         <p>{association}</p>
         <CardMedia
             component="img"
@@ -30,13 +32,24 @@ color: 'var(--secondary-text)', padding: '30px 40px', borderRadius: '15px', marg
             className="ProjectCardImg"
         />
         <CardContent sx={{padding: 0}}>
+        <h3>Project Stack</h3>
         <ul className="stackList">
             {stack.map(stackItem => (
                 <li key={stackItem}>{stackItem}</li>
             ))}
         </ul>
-        <h4> {descriptionHeading} </h4>
+        <h3>Features</h3>
+        <ul className="featureList">
+            {features.map(featureItem => (
+                <li key={featureItem}>{featureItem}</li>
+            ))}
+        </ul>
+        <h3> Project Summary </h3>
         <p> {descriptionBody} </p>
+        <h3> Challenges </h3>
+        <p>{challenge}</p>
+        <h3> Outcome </h3>
+        <p>{outcome}</p>
         </CardContent>
         <div className="linkSection">
             {viewLink && <a href={viewLink} className="projectLink">View Project</a>}

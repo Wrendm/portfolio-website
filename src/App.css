@@ -66,6 +66,10 @@
   }
 }
 
+.projectName{
+    font-weight: bold;
+}
+
 .linkSection{
     display: flex;
     justify-content: space-evenly;

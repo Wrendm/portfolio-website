@@ -13,7 +13,9 @@ const Projects = () => (
                     alt={project.alt} 
                     stack={project.stack} 
                     association={project.association} 
-                    descriptionHeading={project.descriptionHeading} 
+                    features={project.features} 
+                    challenge={project.challenge} 
+                    outcome={project.outcome} 
                     descriptionBody={project.descriptionBody} 
                     viewLink={project.viewLink} 
                     githubLink={project.githubLink} />
