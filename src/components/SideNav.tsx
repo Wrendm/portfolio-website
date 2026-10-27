@@ -8,6 +8,7 @@ const SideNav = () => {
             <nav className="SideNavLinks">
                 <NavLink to="/" end className="SideNavLink">Home</NavLink>
                 <NavLink to="/projects" className="SideNavLink">Projects</NavLink>
+                <NavLink to="/skills" className="SideNavLink">Skills and Experience</NavLink>
             </nav>
             <div className="SideNavTitle">
                 <div className="socialLinks">

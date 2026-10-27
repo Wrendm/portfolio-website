@@ -1,12 +1,19 @@
-// src/components/skills/SkillGroup.tsx
-import { Link } from "react-router-dom";
+import { skillsData } from './skillsExperienceList';
 
-type SkillGroupProps = {
-  category: string;
-  items: string[];
-  projects?: string[];
-};
-
-export default function SkillGroup({ category, items, projects }: SkillGroupProps) {
-  return null;
+export default function HardSkills() {
+return(
+    <section className='HardSkills'>
+        <h3>Hard Skills</h3>
+        {skillsData.hard.map(group => (
+            <div key={group.category}>
+                <p>{group.category}</p>
+                <ul>
+                    {group.items.map(item => (
+                        <li key={item}>{item}</li>
+                    ))}
+                </ul>
+            </div>
+        ))}
+    </section>
+);
 }

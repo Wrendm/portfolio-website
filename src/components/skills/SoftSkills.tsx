@@ -1,12 +1,19 @@
-// src/components/skills/SoftSkillItem.tsx
-import { Link } from "react-router-dom";
+import { skillsData } from './skillsExperienceList';
 
-type SoftSkillItemProps = {
-  title: string;
-  evidence: string;
-  projects?: string[];
-};
-
-export default function SoftSkillItem({ title, evidence, projects }: SoftSkillItemProps) {
-  return null;
+export default function SoftSkills() {
+return(
+    <>
+        {skillsData.soft.length > 0 && (
+            <section className='SoftSkills'>
+                <h3>Soft Skills</h3>
+                {skillsData.soft.map(skill => (
+                    <div key={skill.title}>
+                        <p>{skill.title}</p>
+                        <p>{skill.evidence}</p>
+                    </div>
+                ))}
+            </section>
+        )}
+    </>
+);
 }

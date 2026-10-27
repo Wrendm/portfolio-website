@@ -1,14 +1,16 @@
-// src/pages/Skills.tsx
-import { skillsData } from "../components/skills/skillsExperienceList";
-import SkillGroup from "../components/skills/SkillGroup";
+import HardSkills from '../components/skills/HardSkills';
+import Experience from '../components/skills/Experience';
+import SoftSkills from '../components/skills/SoftSkills';
+import Education from '../components/skills/Education';
 
-export default function Skills() {
-  return (
-    <section>
-      <h2>Hard Skills</h2>
-      {skillsData.hard.map((group) => (
-        <SkillGroup key={group.category} {...group} />
-      ))}
-    </section>
-  );
-}
+const Skills = () => (
+  <div className='Skills'>
+    <h2>Skills &amp; Experience</h2>
+    <HardSkills />
+    <Experience />
+    <SoftSkills />
+    <Education />
+  </div>
+);
+
+export default Skills;
