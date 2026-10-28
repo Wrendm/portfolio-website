@@ -66,8 +66,29 @@
   }
 }
 
+.projectCard { 
+    color: var(--text); 
+    padding: 30px 40px; 
+    margin: 20px 0;
+    border-radius: 15px;
+    border: solid thin var(--text);
+}
+
 .projectName{
     font-weight: bold;
+}
+
+.stackList{
+    padding-left: 0;
+}
+
+.stackList li{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    list-style-type: none; 
+    border-radius: 15px;
+    border: solid thin var(--text);
 }
 
 .linkSection{
@@ -81,7 +102,7 @@
     color: var(--text);
     border: solid thin var(--text);
     padding: 10px 20px;
-    border-radius: 10px; 
+    border-radius: 15px; 
     cursor: pointer;
     text-decoration: none;
     text-align: center;
@@ -91,4 +112,40 @@
     text-decoration: underline;
 }
 
+.HardSkills h3,
+.SoftSkills h3,
+.Education h3,
+.Experience h3{
+    padding: 20px 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.HardSkillCard{
+    border: thin solid var(--text);
+    border-radius: 10px;
+    padding: 0 40px 10px 20px;
+    margin: 10px 0;
+    width: 25%;
+}
+
+@media (max-width: 650px) {
+    .HardSkillCard{
+    	width: 100%;
+    }
+}
+
+.SoftSkillCard,
+.ExperienceCard,
+.EducationCard{
+    border: thin solid var(--text);
+    border-radius: 10px;
+    padding: 0 40px 10px 20px;
+    margin: 20px 0;
+}
 

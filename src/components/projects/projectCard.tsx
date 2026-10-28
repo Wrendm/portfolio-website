@@ -21,9 +21,9 @@ type ProjectProps = {
 
 export default function ProjectCard({id, image, alt, name, stack, association, features, challenge, outcome, descriptionBody, viewLink, githubLink}: ProjectProps){
 return(
-    <Card className="projectCard" sx={{ backgroundColor: 'var(--secondary-bg)',  
-color: 'var(--secondary-text)', padding: '30px 40px', borderRadius: '15px', margin: '20px 0'}}>
-        <h2 className="projectName" style={{color: 'var(--secondary-text)'}}>{name}</h2>
+    <Card className="projectCard" sx={{ backgroundColor: 'var(--bg)',  
+color: 'var(--text)', borderRadius: '15px'}}>
+        <h2 className="projectName" style={{color: 'var(--text)'}}>{name}</h2>
         <p>{association}</p>
         <CardMedia
             component="img"
