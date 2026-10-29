@@ -1,21 +1,38 @@
-.App{
-    display: flex;
-    min-height: 100vh;
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.Layout {
+  display: flex;
 }
 
 .SideNav {
     width: 200px;
     flex-shrink: 0;
     position: sticky;
+    overflow-y: auto;
     top: 0;
     height: 100dvh;
     align-self: flex-start;
-    overflow-y: auto;
     padding: 0 20px;
     border-right: solid thin var(--border);
-
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .SideNav {
+       
+        
+    }
 }
 
 .SideNavLinks {
@@ -37,13 +54,59 @@
     text-decoration: underline;
 }
 
-
 .SideNavTitle {
     margin: 0 0 20px;
 }
 
 .socialLinks a{
     margin-right: 10px;
+}
+
+.mobile-only-wrapper {
+  display: none;
+}
+
+.desktop-only {
+  display: contents;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 0 20px;
+    background: var(--bg);
+    border-bottom: solid thin var(--border);
+  }
+
+  .MobileNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: solid thin var(--border);
+  }
+
+  .MobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 20px;
+  }
+
+  .MobileTitle a{
+    text-decoration: none;
+    color: var(--text);
+  }
 }
 
 .site-main{
@@ -117,6 +180,7 @@
 .Education h3,
 .Experience h3{
     padding: 20px 0;
+    text-decoration: underline;
 }
 
 .wrapper{
@@ -131,12 +195,12 @@
     border-radius: 10px;
     padding: 0 40px 10px 20px;
     margin: 10px 0;
-    width: 25%;
+    max-width: 115px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .HardSkillCard{
-    	width: 100%;
+    	width: 30%;
     }
 }
 

@@ -1,12 +1,14 @@
-.bokor-regular {
-  font-family: "Bokor", system-ui;
-  font-weight: 400;
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 :root {
   --text: #343434;
-  --text-h: #a1a291;
+  --text-h: #343434;
   --secondary-text: #120a00;
   --bg: #eae6d8;    
   --secondary-bg: #C3AD95;
@@ -41,8 +43,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #fefae0;
-    --secondary-text: #120a00;
-    --text-h: #eae6d8;
+    --text-h: #fefae0;
     --bg: #232323;
     --secondary-bg: #C3AD95;
     --border: #a1a291;
@@ -109,7 +110,11 @@ h4{
     font-size: 22px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: "Bokor", serif;
+    font-family: "Inconsolata", serif;
+}
+
+.MobileTitle{
+    font-family: "Inconsolata", serif;
 }
 
 a.active{

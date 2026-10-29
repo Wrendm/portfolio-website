@@ -5,7 +5,7 @@ export const skillsData = {
     { category: "Backend", items: ["Node.js", "Express", "PHP", "REST APIs"], projects: ["The End Times", "Seeds of Sage"] },
     { category: "Databases", items: ["MySQL", "MongoDB"], projects: ["Seeds of Sage", "The End Times"] },
     { category: "Tools", items: ["Git", "WordPress"], projects: ["RACC"] },
-    { category: 'Design', items: ['Graphic design', 'Social media graphics', 'Web and Mobile App UI design', 'Personal art practice', 'Photoshop', 'Canva'], projects: ['RACC', 'The End Times'] },
+    { category: 'Design', items: ['Graphic design', 'Social media graphics', 'Web and Mobile App UI', 'Personal art practice', 'Photoshop', 'Canva'], projects: ['RACC', 'The End Times'] },
   ],
 
   experience: [

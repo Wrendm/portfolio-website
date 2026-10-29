@@ -1,10 +1,10 @@
 import {Outlet} from 'react-router';
-import SideNav from '../SideNav';
+import Nav from '../navigation/Nav';
 
 const Layout = () => {
     return (
         <div className="App">
-            <SideNav />
+            <Nav />
             <main className="site-main">
                 <Outlet />
             </main>
