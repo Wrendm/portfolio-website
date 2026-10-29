@@ -1,12 +1,10 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Link from '@mui/material/Link';
-import Button from '@mui/material/Button';
 
 type ProjectProps = {
     id: number;
-    image: URL;
+    image: string;
     alt: string;
     name: string;
     stack: string[];
@@ -15,8 +13,8 @@ type ProjectProps = {
     challenge: string;
     outcome: string;
     descriptionBody: string;
-    viewLink: URL;
-    githubLink: URL;
+    viewLink: string;
+    githubLink: string;
 };
 
 export default function ProjectCard({id, image, alt, name, stack, association, features, challenge, outcome, descriptionBody, viewLink, githubLink}: ProjectProps){

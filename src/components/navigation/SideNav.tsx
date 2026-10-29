@@ -1,4 +1,3 @@
-import Stack from '@mui/material/Stack';
 import {FaLinkedin, FaGithub} from "react-icons/fa6";
 import {NavLink} from 'react-router';
 

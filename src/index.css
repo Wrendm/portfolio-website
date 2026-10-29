@@ -76,10 +76,13 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
   line-height: normal;
+}
+
+h2{
+    font-family: "Inconsolata", serif;
 }
 
 h1 {
@@ -92,7 +95,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;

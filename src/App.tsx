@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import {Outlet, BrowserRouter, Route, Routes} from 'react-router';
+import { BrowserRouter, Route, Routes} from 'react-router';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Projects from './pages/Projects';

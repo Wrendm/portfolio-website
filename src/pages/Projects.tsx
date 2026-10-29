@@ -8,6 +8,7 @@ const Projects = () => (
         <div className='projectDisplay'>
             {projectList.map(project =>(
                 <ProjectCard key={project.id} 
+		    id= {project.id}
                     name={project.name} 
                     image={project.image} 
                     alt={project.alt} 
