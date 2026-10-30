@@ -9,6 +9,7 @@ return(
                 <h4>{entry.title}</h4>
                 <p>{entry.org} | {entry.location}</p>
                 <p>{entry.dates}</p>
+                <p>{entry.summary}</p>
                 <ul>
                     {entry.highlights.map(highlight => (
                         <li key={highlight}>{highlight}</li>
