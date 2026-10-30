@@ -1,23 +1,11 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import type { Project } from './projectList';
 
-type ProjectProps = {
-    id: number;
-    image: string;
-    alt: string;
-    name: string;
-    stack: string[];
-    association: string;
-    features: string[];
-    challenge: string;
-    outcome: string;
-    descriptionBody: string;
-    viewLink: string;
-    githubLink: string;
-};
+type ProjectProps = Omit<Project, 'id'>;
 
-export default function ProjectCard({id, image, alt, name, stack, association, features, challenge, outcome, descriptionBody, viewLink, githubLink}: ProjectProps){
+export default function ProjectCard({image, alt, name, stack, association, features, challenge, outcome, descriptionBody, viewLink, githubLink}: ProjectProps){
 return(
     <Card className="projectCard" sx={{ backgroundColor: 'var(--bg)',  
 color: 'var(--text)', borderRadius: '15px'}}>

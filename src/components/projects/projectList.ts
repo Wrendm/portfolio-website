@@ -1,4 +1,19 @@
-export const projectList = [
+export type Project = {
+    id: number;
+    image: string;
+    alt: string;
+    name: string;
+    stack: string[];
+    association: string;
+    features: string[];
+    challenge: string;
+    outcome: string;
+    descriptionBody: string;
+    viewLink?: string;
+    githubLink?: string;
+};
+
+export const projectList: Project[] = [
 {
     id: 0,
     image:'/assets/racc.png',

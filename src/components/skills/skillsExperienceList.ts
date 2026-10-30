@@ -1,4 +1,40 @@
-export const skillsData = {
+export type HardSkillGroup = {
+    category: string;
+    items: string[];
+    projects?: string[];
+};
+
+export type ExperienceEntry = {
+    title: string;
+    org: string;
+    location: string;
+    dates: string;
+    highlights: string[];
+    projects?: string[];
+    githubLink?: string;
+};
+
+export type SoftSkill = {
+    title: string;
+    evidence: string;
+    projects?: string[];
+};
+
+export type EducationEntry = {
+    degree: string;
+    school: string;
+    focus: string;
+    coursework: string[];
+};
+
+type SkillsData = {
+    hard: HardSkillGroup[];
+    experience: ExperienceEntry[];
+    soft: SoftSkill[];
+    education: EducationEntry[];
+};
+
+export const skillsData: SkillsData = {
   hard: [
     { category: "Languages", items: ["JavaScript", "TypeScript", "PHP", "SQL", "C", "C++", "Python"], projects: ["RACC", "The End Times", "Seeds of Sage"] },
     { category: "Frontend", items: ["React", "Next.js", "HTML5", "CSS", "Bootstrap"], projects: ["The End Times"] },
