@@ -1,13 +1,19 @@
 import ProjectCard from '../components/projects/projectCard';
 import {projectList} from '../components/projects/projectList';
+import PageHeader from '../components/navigation/PageHeader';
 
+const projectSections = projectList.map(project => ({
+  id: `project-${project.id}`,
+  label: project.linkText,
+}));
 
 const Projects = () => (
   <div className='Projects'>
-    <h1>Recent Work</h1>
+    <PageHeader title='Recent Projects' sections={projectSections} />
         <div className='projectDisplay'>
             {projectList.map(project =>(
                 <ProjectCard key={project.id} 
+                    id={project.id}
                     name={project.name} 
                     image={project.image} 
                     alt={project.alt} 
