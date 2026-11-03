@@ -2,7 +2,7 @@ import { skillsData } from './skillsExperienceList';
 
 export default function HardSkills() {
 return(
-    <section className='HardSkills'>
+    <section className='HardSkills' id='HardSkills'>
         <h3>Hard Skills</h3>
 	<div className='wrapper'>
         {skillsData.hard.map(group => (

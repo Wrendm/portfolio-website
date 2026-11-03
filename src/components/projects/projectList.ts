@@ -3,6 +3,7 @@ export type Project = {
     image: string;
     alt: string;
     name: string;
+    linkText: string;
     stack: string[];
     association: string;
     features: string[];
@@ -19,6 +20,7 @@ export const projectList: Project[] = [
         image: '/assets/racc.png',
         alt: 'screenshot of RACC.orgs homepage',
         name: 'Website for Regional Arts & Culture Council',
+        linkText: 'Wordpress Theme Development and Content Management - RACC ',
         stack: ['Wordpress', 'php'],
         association: 'Full-Time - Regional Arts & Culture Council',
         features: ['New WordPress theme built from the _s starter, replacing a legacy theme tied to a deprecated PHP version',
@@ -37,6 +39,7 @@ export const projectList: Project[] = [
         image: '/assets/the-end-times.png',
         alt: 'screenshot of The End Times',
         name: 'The End Times',
+        linkText: 'MERN Stack Social Media App - The End Times',
         stack: ['React', 'React Router', 'TypeScript', 'Express', 'Axios', 'NodeJS', 'MongoDB with Mongoose'],
         association: 'Personal Project',
         descriptionBody: 'A full-stack art-sharing platform I built from scratch as an alternative to mainstream social media: a place to post creative work without ads, likes, or follower counts. It runs on a REST API with its own authentication and permissions, built with React, TypeScript, Express, and MongoDB.',
@@ -59,6 +62,7 @@ export const projectList: Project[] = [
         image: '/assets/sos.png',
         alt: 'Screenshot of Therapy Website',
         name: 'Website for Seeds of Sage',
+        linkText: 'PHP Business Site with Custom CMS - SOS ',
         stack: ['PHP', 'MySQL'],
         association: 'Contract Work',
         features: [

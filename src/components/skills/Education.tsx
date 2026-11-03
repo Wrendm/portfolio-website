@@ -2,7 +2,7 @@ import { skillsData } from './skillsExperienceList';
 
 export default function Education() {
 return(
-    <section className='Education'>
+    <section className='Education' id='Education'>
         <h3>Education</h3>
         {skillsData.education.map(entry => (
             <div key={entry.degree} className='EducationCard'>

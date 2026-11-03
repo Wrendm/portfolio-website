@@ -4,7 +4,7 @@ export default function SoftSkills() {
 return(
     <>
         {skillsData.soft.length > 0 && (
-            <section className='SoftSkills'>
+            <section className='SoftSkills' id='SoftSkills'>
                 <h3>Soft Skills</h3>
                 {skillsData.soft.map(skill => (
                     <div key={skill.title} className='SoftSkillCard'>
